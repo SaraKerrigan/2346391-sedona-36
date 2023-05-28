@@ -92,11 +92,12 @@ body {
   text-align: center;
 }
 
-.main-index {
-  background-image: url("..//image/background/filter-background.jpg");
-  color: #000000;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+.welcome {
+  background-image: url("../image/background/welcome-background.jpg");
+  padding: 51px 50px 82px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-list {
@@ -204,20 +205,39 @@ body {
   flex-wrap: wrap;
 }
 
-.advantages-items-figure figure {
+.advantages-item-figure {
   margin: 0;
   display: flex;
 }
 
-.advantages-items-figure figcaption {
-  background-color: #82b3d3;
+.advantages-item-figure-reverse {
+  flex-direction: row-reverse;
 }
 
-.advantages-items-figure .advantages-title {
+.advantages-item-img {
+  width: 100%;
+  padding: 0;
+}
+
+.advantages-item:not(.advantages-item-img) {
+  width: 400px;
+  padding: 112px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item:not(.advantages-item-img):nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-figcaption {
+  background-color: #82b3d3;
+  width: 400px;
+}
+
+.advantages-item-figure .advantages-title {
   color: #ffffff;
 }
 
-.advantages-items-figure .advantages-description {
+.advantages-item-figure .advantages-description {
   color: #ffffff;
 }
 
@@ -225,6 +245,47 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 400px;
+  text-align: center;
+  display: flex;
+  padding: 183px 85px 81px 85px;
+}
+
+.services-item:nth-child(odd) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.catalog-sort {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.catalog-sort-item {
+  width: 400px;
+}
+
+.catalog-hotels {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: flex-start;
+}
+
+.hotels-card {
+  display: flex;
+  margin-top: 170px;
 }
 
 .catalog-sort {
@@ -251,12 +312,6 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-}
-
-option value {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .hotel-card-title {
@@ -321,8 +376,4 @@ option value {
   text-align: center;
   color: #ffffff;
   background-color: #83b3d3;
-}
-
-.services-title {
-  display: flex;
 }
