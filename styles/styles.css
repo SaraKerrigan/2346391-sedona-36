@@ -54,9 +54,41 @@ body {
 }
 
 .button {
+  font-weight: 700;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
+.button-grey {
+  font-weight: 400;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.button-transporent {
+  background-color: transparent;
 }
 
 .page-header {
@@ -163,19 +195,45 @@ body {
   text-align: center;
 }
 
-.search-title {
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 406px;
+  padding: 96px 304px;
+  gap: 10px;
+}
+
+.search-main-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  justify-content: center;
 }
 
-.search-description {
+.search-main-discription {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  justify-content: center;
+}
+
+.search-main-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #756157;
+  color: #ffffff;
+  align-items: center;
+  padding: 8px 50px;
+  position: absolute;
 }
 
 .newsletter-title {
@@ -184,6 +242,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 .newsletter-description {
@@ -193,8 +252,29 @@ body {
   text-align: center;
 }
 
-.newsletter-input {
+.newsletter-input-email {
   font-family: inherit;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 260px;
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #f2f2f2;
+}
+
+.placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .advantages-list {
@@ -231,6 +311,7 @@ body {
 .advantages-item-figcaption {
   background-color: #82b3d3;
   width: 400px;
+  padding: 102px 85px;
 }
 
 .advantages-item-figure .advantages-title {
@@ -258,12 +339,15 @@ body {
 .services-item {
   width: 400px;
   text-align: center;
-  display: flex;
   padding: 183px 85px 81px 85px;
 }
 
 .services-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
+}
+
+.catalog-menu {
+  display: flex;
 }
 
 .catalog-sort {
@@ -273,19 +357,45 @@ body {
 }
 
 .catalog-sort-item {
-  width: 400px;
+  width: 150.43px;
+  height: 24px;
+}
+
+.catalog-filter-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
+  border-radius: 4px;
+  gap: 10px;
 }
 
 .catalog-hotels {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: flex-start;
+  padding: 50px 70px 60px 70px;
+}
+
+.hotels-list {
+  margin: 0 0 40px 0;
+  padding: 0 0 40px 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .hotels-card {
-  display: flex;
-  margin-top: 170px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.hotels-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 .catalog-sort {
@@ -298,12 +408,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-}
-
-.button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .catalog-sort-title {
@@ -351,22 +455,13 @@ body {
   text-align: center;
 }
 
-.pagination-link .pagination-current {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.pagination-link .pagination-divider {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .pagination-link {
@@ -376,4 +471,22 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #83b3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-divider {
+  color: #000000;
+  background-color: #ffffff;
 }
