@@ -186,6 +186,8 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
 }
 
 .services-description {
@@ -193,15 +195,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  color: #333333;
 }
 
 .search {
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  height: 406px;
   padding: 96px 304px;
-  gap: 10px;
+  align-items: center;
 }
 
 .search-main-title {
@@ -211,14 +212,16 @@ body {
   text-align: center;
   text-transform: uppercase;
   justify-content: center;
+  margin: 0 0 20px 0;
 }
 
-.search-main-discription {
+.search-main-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   justify-content: center;
+  margin: 0 0 54px 0;
 }
 
 .search-main-link {
@@ -233,7 +236,23 @@ body {
   color: #ffffff;
   align-items: center;
   padding: 8px 50px;
-  position: absolute;
+}
+
+.newsletter {
+  padding: 94px 258px 104px 258px;
+}
+.newsletter-main .newsletter-title {
+  color: #ffffff;
+}
+
+.newsletter-main .newsletter-description {
+  color: #ffffff;
+}
+
+.newsletter-main {
+  background-image: url(../image/background/Subscribe-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .newsletter-title {
@@ -243,6 +262,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   justify-content: center;
+  margin: 0 0 20px 0;
 }
 
 .newsletter-description {
@@ -250,31 +270,32 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0 0 54px 0;
+}
+
+.newsletter-form {
+  display: flex;
 }
 
 .newsletter-input-email {
   font-family: inherit;
-  align-items: center;
-  padding: 12px 20px;
-  gap: 260px;
-  width: 452px;
-  height: 52px;
-  border-radius: 4px 0px 0px 4px;
-  background-color: #f2f2f2;
-}
-
-.placeholder {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  align-items: center;
+  padding: 12px 20px;
+  min-width: 400px;
+  flex-grow: 1;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
+  min-height: 100%;
 }
 
-.button newsletter-button {
-  font-weight: 700;
+.newsletter-button {
   font-size: 20px;
   line-height: 36px;
-  background-color: #82b3d3;
-  border-radius: 0px 4px 4px 0px;
+  min-width: 232px;
+  border-radius: 0 4px 4px 0;
 }
 
 .advantages-list {
@@ -326,6 +347,8 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0 0 8px 0;
+  color: #ffffff;
 }
 
 .services-list {
@@ -489,4 +512,11 @@ body {
 .pagination-divider {
   color: #000000;
   background-color: #ffffff;
+}
+
+.main-header {
+  background-image: url("../image/background/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 70px 70px 70px;
 }
