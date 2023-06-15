@@ -50,7 +50,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba (0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -309,6 +309,7 @@ body {
 .advantages-item-figure {
   margin: 0;
   display: flex;
+  background-color: #82b3d3;
 }
 
 .advantages-item-figure-reverse {
@@ -331,6 +332,7 @@ body {
 
 .advantages-item-figcaption {
   background-color: #82b3d3;
+  flex-shrink: 0;
   width: 400px;
   padding: 102px 85px;
 }
@@ -519,4 +521,42 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 70px 70px;
+}
+
+.footer-page {
+  display: flex;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item-vk {
+  color: #83b3d3;
+  padding: 58px 342.83px 48px 81.67px;
+}
+
+.footer-social-item-tg {
+  color: #83b3d3;
+  padding: 57px 298.5px 47.9px 132px;
+}
+
+.footer-social-item-yt {
+  color: #83b3d3;
+  padding: 56.5px 249.17px 46.5px 177.33px;
+}
+
+.footer-phone-link {
+  padding: 45px 420.5px 35px 448.5px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  width: 331px;
+  height: 40px;
+  flex-wrap: nowrap;
+  color: #000000;
+}
+
+.logo-html {
+  padding-right: 70.1px;
 }
